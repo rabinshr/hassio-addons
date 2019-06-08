@@ -1,4 +1,4 @@
-# Hplib to MQTT Bridge hass.io addon - ALPHA
+# NOT WORKING! Hplib to MQTT Bridge hass.io addon - ALPHA
 Query HP network printer using Hplib (http://hplib.sourceforge.net/) and send ink levels via MQTT
 
 Not tested yet.
