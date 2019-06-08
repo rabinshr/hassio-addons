@@ -12,19 +12,19 @@ LABEL Description="This image is used to start a script that will monitor for RF
 #
 # First install software packages needed to compile rtl_433 and to publish MQTT events
 #
-#mkdir /tmp/src && \
-#cd /tmp/src && \
-#curl -L https://downloads.sourceforge.net/project/hplip/hplip/3.19.5/hplip-3.19.5.tar.gz > hplip-3.19.5.tar.gz && \
-#tar xvfz hplip-3.19.5.tar.gz && \
-#cd hplip-3.19.5 && \
-#./configure && \
-#make && \
-#make install && \
-#apk add --no-cache mosquitto-clients jq
 
 RUN \
-apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev cups
-# libcups2-dev && \
+apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev cups && \
+mkdir /tmp/src && \
+cd /tmp/src && \
+curl -L https://downloads.sourceforge.net/project/hplip/hplip/3.19.5/hplip-3.19.5.tar.gz > hplip-3.19.5.tar.gz && \
+tar xvfz hplip-3.19.5.tar.gz && \
+cd hplip-3.19.5 && \
+./configure && \
+make && \
+make install && \
+apk add --no-cache mosquitto-clients jq
+
 #
 # Define an environment variable
 #
