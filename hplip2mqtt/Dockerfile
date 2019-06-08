@@ -20,11 +20,11 @@ cd /tmp/src && \
 curl -L https://downloads.sourceforge.net/project/hplip/hplip/3.19.5/hplip-3.19.5.tar.gz > hplip-3.19.5.tar.gz && \
 tar xvfz hplip-3.19.5.tar.gz && \
 cd hplip-3.19.5 && \
-./configure && \
-make && \
-make install && \
-apk add --no-cache mosquitto-clients jq
-
+#./configure && \
+#make && \
+#make install && \
+#apk add --no-cache mosquitto-clients jq
+#
 #
 # Define an environment variable
 #
