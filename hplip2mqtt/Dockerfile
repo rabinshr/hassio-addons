@@ -19,9 +19,8 @@ mkdir /tmp/src && \
 cd /tmp/src && \
 curl -L https://downloads.sourceforge.net/project/hplip/hplip/3.19.5/hplip-3.19.5.tar.gz -o hplip.tar.gz && \
 tar xvfz hplip.tar.gz && \
-cd hplip-3.19.5
-#&& \
-#./configure
+cd hplip-3.19.5 && \
+./configure
 #&& \
 #make && \
 #make install && \
