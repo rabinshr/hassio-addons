@@ -3,7 +3,7 @@
   "version": "0.1",
   "slug": "hplip2mqtt",
   "description": "BETA: Query network printer using hplib (http://hplip.sourceforge.net/) and send ink levels via MQTT",
-  "url": "https://github.com/james-fry/hassio-addons/tree/master/rtl4332mqtt",
+  "url": "https://github.com/bouwew/hassio-addons/tree/master/hplip2mqtt",
   "startup": "before",
   "boot": "auto",
   "map": ["config:rw", "ssl"],
