@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# A simple script that will call ink
+# A simple script that will call hplip
 
 export LANG=C
 PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
