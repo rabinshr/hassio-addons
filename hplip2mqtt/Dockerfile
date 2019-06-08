@@ -13,7 +13,7 @@ LABEL Description="This image is used to start a script that will monitor for RF
 # First install software packages needed to compile rtl_433 and to publish MQTT events
 #
 RUN \
-apk add --no-cache --virtual build-deps alpine-sdk cups libusb && \
+apk add --no-cache --virtual build-deps alpine-sdk python3-dev libcups2-dev && \
 #mkdir /tmp/src && \
 #cd /tmp/src && \
 #curl -L https://downloads.sourceforge.net/project/hplip/hplip/3.19.5/hplip-3.19.5.tar.gz > hplip-3.19.5.tar.gz && \
