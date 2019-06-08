@@ -23,7 +23,7 @@ LABEL Description="This image is used to start a script that will monitor for RF
 #apk add --no-cache mosquitto-clients jq
 
 RUN \
-apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev libcups2-dev
+apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev cups
 # libcups2-dev && \
 #
 # Define an environment variable
