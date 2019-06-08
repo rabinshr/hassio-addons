@@ -14,7 +14,7 @@ LABEL Description="This image is used to start a script that will monitor for RF
 #
 
 RUN \
-apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev python3-xml cups cups-dev 
+apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev cups cups-dev 
 #&& \
 #mkdir /tmp/src && \
 #cd /tmp/src && \
