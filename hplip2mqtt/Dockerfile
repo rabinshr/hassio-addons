@@ -18,9 +18,9 @@ apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev 
 mkdir /tmp/src && \
 cd /tmp/src && \
 curl -L https://downloads.sourceforge.net/project/hplip/hplip/3.19.5/hplip-3.19.5.tar.gz && \
-tar xvfz hplip-3.19.5.tar.gz && \
-cd hplip-3.19.5 
+tar xvfz hplip-3.19.5.tar.gz
 #&& \
+# cd hplip-3.19.5 && \
 #./configure && \
 #make && \
 #make install && \
