@@ -1,4 +1,4 @@
-# Docker file to create an image for a hass.io add-on that contains enough software to query a HP network printer via <hplib> and publish the ink levels to a MQTT broker.
+# Docker file to create an image for a hass.io add-on that contains enough software to query a HP network printer via <hplip> and publish the ink levels to a MQTT broker.
 
 ARG BUILD_FROM
 FROM $BUILD_FROM
@@ -31,4 +31,4 @@ ENV MQTT_USER="guest"
 ENV MQTT_PASS="guest"
 ENV MQTT_TOPIC="homeassistant/sensor/ink"
 
-CMD cd / && cp /config/hplib2mqtt/hplib2mqtt.sh /hplib2mqtt.sh && chmod +x /hplib2mqtt.sh && /hplib2mqtt.sh
+CMD cd / && cp /config/hplip2mqtt/hplip2mqtt.sh /hplip2mqtt.sh && chmod +x /hplip2mqtt.sh && /hplip2mqtt.sh
