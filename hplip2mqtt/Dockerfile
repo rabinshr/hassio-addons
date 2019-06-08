@@ -16,13 +16,6 @@ RUN \
 apk add --no-cache --virtual build-deps alpine-sdk cmake cups cups-devel cups-image gcc gs libjpeg libpthread libtool libusb python-devel python-xml && \
 mkdir /tmp/src && \
 cd /tmp/src && \
-curl -L https://downloads.sourceforge.net/project/hplip/hplip/3.19.5/hplip-3.19.5.tar.gz > hplip-3.19.5.tar.gz && \
-tar xvfz hplip-3.19.5.tar.gz && \
-cd hplip-3.19.5 && \
-./configure && \
-make && \
-make install && \
-apk add --no-cache mosquitto-clients jq
 
 #
 # Define an environment variable
@@ -34,3 +27,13 @@ ENV MQTT_PASS="guest"
 ENV MQTT_TOPIC="homeassistant/sensor/ink"
 
 CMD cd / && cp /config/hplip2mqtt/hplip2mqtt.sh /hplip2mqtt.sh && chmod +x /hplip2mqtt.sh && /hplip2mqtt.sh
+
+#mkdir /tmp/src && \
+#cd /tmp/src && \
+#curl -L https://downloads.sourceforge.net/project/hplip/hplip/3.19.5/hplip-3.19.5.tar.gz > hplip-3.19.5.tar.gz && \
+#tar xvfz hplip-3.19.5.tar.gz && \
+#cd hplip-3.19.5 && \
+#./configure && \
+#make && \
+#make install && \
+#apk add --no-cache mosquitto-clients jq
