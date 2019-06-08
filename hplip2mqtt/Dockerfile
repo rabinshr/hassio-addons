@@ -13,7 +13,7 @@ LABEL Description="This image is used to start a script that will monitor for RF
 # First install software packages needed to compile rtl_433 and to publish MQTT events
 #
 RUN \
-apk add --no-cache --virtual build-deps alpine-sdk cmake cups cups-devel cups-image gcc gs libjpeg libpthread libtool libusb python-devel python-xml && \
+apk add --no-cache --virtual build-deps alpine-sdk cups libusb && \
 mkdir /tmp/src && \
 cd /tmp/src && \
 
