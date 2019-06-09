@@ -14,7 +14,7 @@ LABEL Description="This image is used to start a script that will monitor for RF
 #
 
 RUN \
-apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev cups cups-dev && \
+apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev cups cups-dev jpeg-dev && \
 mkdir /tmp/src && \
 cd /tmp/src && \
 curl -L https://downloads.sourceforge.net/project/hplip/hplip/3.19.5/hplip-3.19.5.tar.gz -o hplip.tar.gz && \
