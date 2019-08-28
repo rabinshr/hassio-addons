@@ -14,5 +14,13 @@
     "amd64",
     "armv7",
     "i386"
-  ]
+  ],
+  "options": {
+     "flags": [],
+     "env_vars": []
+  },
+  "schema": {
+     "flags": ["str"],
+     "env_vars": ["str"]
+  }
 }
