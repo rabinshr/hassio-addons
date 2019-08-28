@@ -1,0 +1,18 @@
+{
+  "name": "CUPS for HA",
+  "version": "0.1",
+  "slug": "ha_cups",
+  "description": "BETA: Query network printer using cups",
+  "url": "https://github.com/bouwew/hassio-addons/tree/master/cups",
+  "startup": "before",
+  "boot": "auto",
+  "map": ["config:rw", "ssl"],
+  "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"],
+  "host_network": "False",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armv7",
+    "i386"
+  ]
+}
