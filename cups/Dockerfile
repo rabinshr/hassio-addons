@@ -10,8 +10,8 @@ MAINTAINER Bouwe Westerdijk
 LABEL Description="CUPS for HA"
 
 RUN \
-apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev cups cups-dev cups-libs cups-pdf cups-client 
-#cups-filters jpeg-dev
+apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev cups cups-dev cups-libs 
+# cups-pdf cups-client cups-filters jpeg-dev
 #mkdir /tmp/src && \
 #cd /tmp/src && \
 #curl -L https://downloads.sourceforge.net/project/hplip/hplip/3.19.5/hplip-3.19.5.tar.gz -o hplip.tar.gz && \
