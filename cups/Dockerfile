@@ -15,6 +15,10 @@ apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev 
 # Expose IPP printer sharing
 EXPOSE 631/tcp
 
+# Copy data for add-on
+COPY run.sh /
+RUN chmod a+x /run.sh
+
 # Start CUPS instance
 CMD ["/run.sh"]
 
