@@ -12,7 +12,7 @@ LABEL Description="CUPS for HA"
 RUN \
 apk add --no-cache --virtual build-deps alpine-sdk cmake libusb-dev python3-dev cups cups-dev cups-libs cups-client
 
-CMD sudo rc-service cupsd start && sudo rc-update add cupsd
+CMD rc-service cupsd start && rc-update add cupsd
 
 # cups-pdf cups-filters jpeg-dev
 #mkdir /tmp/src && \
