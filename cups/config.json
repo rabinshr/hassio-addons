@@ -22,5 +22,8 @@
   "schema": {
      "flags": ["str"],
      "env_vars": ["str"]
+  },
+  "ports": {
+    "631/tcp": 631
   }
 }
